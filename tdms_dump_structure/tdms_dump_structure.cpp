@@ -408,7 +408,7 @@ namespace {
         replace_in_string_<std::string>(escaped_val, "<", "&lt;");
         replace_in_string_<std::string>(escaped_val, ">", "&gt;");
         replace_in_string_<std::string>(escaped_val, "&", "&amp;");
-        add_with_ident(name, val);
+        add_with_ident(name, escaped_val);
       }
 
       /**
